@@ -1,11 +1,11 @@
 # Wikipedia
 Википедия, учебный проект.
 
-![Википедия](https://raw.githubusercontent.com/Serrjik/OathJar-Invitation/master/OathJar-Invitation-full.jpg)
+![Википедия](https://raw.githubusercontent.com/Serrjik/wikipedia/master/Wikipedia%20-%20main%20screen.png)
 
 Учебный проект создан во время бесплатного онлайн стрима школы [Webcademy.ru](https://webcademy.ru)
 
-Ссылка на вёрстку [https://serrjik.github.io/OathJar-Invitation/](https://serrjik.github.io/OathJar-Invitation/)
+Ссылка на проект [https://serrjik.github.io/wikipedia/](https://serrjik.github.io/wikipedia/)
 
 ### Примененные технологии в проекте:
 
