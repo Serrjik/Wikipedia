@@ -1,0 +1,406 @@
+body {
+	background-color: #F6F6F6;
+	font-family: sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+	font-weight: 500;
+}
+
+a {
+	color: #4394df;
+	transition: color 0.2s ease-in;
+}
+
+a:hover {
+	color: #EB901A;
+
+}
+
+.page-header {
+	max-width: 1200px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 45px;
+}
+
+.page-header--wide {
+	max-width: 1500px;
+}
+
+.page-footer {
+	max-width: 1200px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 45px;
+	justify-content: center;
+	font-size: 14px;
+	color: #98A9B7;
+}
+
+.page-header__logo {
+	width: 130px;
+	margin-right: 50px;
+	border-right: 1px solid #C8CCD1;
+	padding-right: 25px;
+}
+
+.page-header__page-title {
+	display: flex;
+	align-items: center;
+}
+
+.page-header__page-title h1 {
+	font-size: 38px;
+	margin: 0;
+}
+
+.page-wrapper {
+	max-width: 1200px;
+	padding-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.page-wrapper--wide {
+	max-width: 1500px;
+}
+
+.sidebar-col {
+	padding-left: 15px;
+	flex-basis: 300px;
+	flex-shrink: 0;
+	border-right: 1px solid #C8CCD1;
+}
+
+.main-col {
+	width: 100%;
+	padding-left: 35px;
+	padding-right: 25px;
+	background-color: #fff;
+}
+
+.editor-col {
+	padding-left: 15px;
+	padding-right: 35px;
+	flex-basis: 50%;
+	flex-shrink: 0;
+	border-right: 1px solid #C8CCD1;
+}
+
+.article-preview-col {
+	padding-left: 35px;
+	padding-right: 35px;
+	flex-basis: 50%;
+	flex-shrink: 0;
+	background-color: #fff;
+}
+
+.editor-section-title {
+	margin-left: -35px;
+	margin-right: -35px;
+	background: #e4ebef;
+	padding: 15px 35px;
+	font-weight: 600;
+	color: #000;
+	margin-bottom: 35px;
+}
+
+.article-preview-section-title {
+	margin-left: -35px;
+	margin-right: -35px;
+	background: #7e919c;
+	padding: 15px 35px;
+	font-weight: 600;
+	color: #FFF;
+}
+
+.logo {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-bottom: 0px;
+}
+
+.logo img {
+	max-width: 200px;
+}
+
+.title-medium {
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-input {
+	padding: 10px 15px;
+	width: 100%;
+	font-size: 18px;
+	border: 1px solid #a2a9b1;
+}
+
+.form-input:focus {
+	outline: none;
+	border: 2px solid #EB901A;
+	padding: 9px 14px;
+}
+
+.form-textarea {
+	font-size: 16px;
+	line-height: 1.5;
+	padding: 10px 15px;
+	width: 100%;
+	min-height: 400px;
+	font-family: sans-serif;
+	border: 1px solid #a2a9b1;
+}
+
+.form-textarea:focus {
+	outline: none;
+	border: 2px solid #EB901A;
+	padding: 9px 14px;
+}
+
+.form-select {
+	padding: 10px 15px;
+	width: 100%;
+	font-size: 18px;
+	border: 1px solid #a2a9b1;
+}
+
+.link-button {
+	font-size: 14px;
+	padding: 10px 0px;
+	text-align: right;
+}
+
+.section-block {
+	padding: 20px 20px;
+	border: 1px solid #c8ccd1;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+.section-block p:last-child {
+	margin-bottom: 0;
+}
+
+.section-block .article-wrapper h2 {
+	margin-top: 0;
+	font-size: 28px;
+}
+
+.title {
+	font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+	font-weight: 500;
+	font-size: 26px;
+}
+
+.title-new-article {
+	font-weight: 600;
+	font-size: 16px;
+	color: #A1AFB4;
+	margin-bottom: 10px;
+}
+
+.other-list {
+	font-size: 16px;
+}
+
+.other-list__item {
+	margin-bottom: 15px;
+}
+
+.other-list__link {}
+
+.aside-block {
+	padding: 20px 20px;
+	border-top: 1px solid #C8CCD1;
+}
+
+.aside-block:first-child {
+	border-top: none;
+	padding-top: 0;
+}
+
+.aside-title {
+	font-size: 24px;
+	font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.articles-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 25px;
+	font-size: 15px;
+}
+
+.articles-list-item {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 15px;
+	line-height: 1.5;
+}
+
+.articles-list-link {
+	display: inline-block;
+}
+
+.article-wrapper {}
+
+.article-wrapper a {
+	text-decoration: none;
+}
+
+.article-wrapper p {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.article-wrapper h1 {
+	font-weight: 500;
+	font-size: 38px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(162, 169, 177, 0.3);
+}
+
+.article-wrapper h2 {
+	font-weight: 500;
+	font-size: 28px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(162, 169, 177, 0.3);
+}
+
+.article-wrapper h3 {
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.article-wrapper h4 {
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.article-wrapper h5 {
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.article-wrapper h6 {
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.button-new {
+	background-color: #a2a9b1;
+	color: #fff;
+	font-weight: 600;
+	font-size: 16px;
+	border: none;
+	padding: 15px 20px;
+	border-radius: 6px;
+	width: 100%;
+	display: block;
+	transition: 
+		background-color 0.2s ease-in, 
+		color 0.2s ease-in;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+}
+
+.button-new:hover {
+	background-color: #EB901A;
+	color: #fff;
+}
+
+.button {
+	background-color: #f8f9fa;
+	color: #000;
+	font-weight: 400;
+	font-size: 14px;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 0px;
+	display: inline-block;
+	transition: 
+		background-color 0.2s ease-in, 
+		color 0.2s ease-in;
+	cursor: pointer;
+	border: 1px solid #a2a9b1;
+	text-decoration: none;
+}
+
+.button:hover {
+	background-color: #E9EBED;
+	color: #000;
+}
+
+.button--dark {
+	background-color: #666666;
+	color: #FFF;
+	border: 1px solid #3F3F3F;
+}
+
+.button--dark:hover {
+	background-color: #3F3F3F;
+	color: #FFF;
+}
+
+.button-save {
+	background-color: #E9EBED;
+	color: #000;
+	font-weight: 400;
+	font-size: 14px;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 0px;
+	display: inline-block;
+	transition: 
+		background-color 0.2s ease-in, 
+		color 0.2s ease-in;
+	cursor: pointer;
+	border: 1px solid #a2a9b1;
+}
+
+.button-save:hover {
+	background-color: #D6DDE3;
+}
+
+.button-save:focus {
+	outline: none;
+	border: 2px solid #EB901A;
+	padding: 9px 14px;
+}

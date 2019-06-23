@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Статья - учебный проект Википедия</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<div class="page-wrapper">
+		<div class="sidebar-col">
+
+			<div class="aside-block">
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/wiki-logo.png" alt="Википедия">
+					</a>
+				</div>
+			</div>
+
+			<div class="aside-block">
+				<a href="new.html" class="button-new">Добавить статью</a>
+			</div>
+
+			<div class="aside-block">
+				<h3 class="aside-title">
+					Новые статьи
+				</h3>
+				<ul class="articles-list" id="last-articles"></ul>
+			</div>
+
+		</div>
+		<div class="main-col">
+			<article class="article-wrapper" id="article"></article>
+			<button class="button" id="edit-article">Редактировать статью</button>
+		</div>
+	</div>
+
+	<footer class="page-footer">
+		<p>Проект сделал Сергей Григорович на интенсиве <a href="https://WebCademy.ru" target="_blank">WebCademy.ru</a></p>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/article.js"></script>
+
+</body>
+
+</html>

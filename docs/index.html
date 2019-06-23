@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Главная страница - учебный проект Википедия</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<!-- Обертка всего контента   -->
+	<div class="page-wrapper">
+
+		<!-- Левая колонка -->
+		<div class="sidebar-col">
+
+			<!-- Логотип -->
+			<div class="aside-block">
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/wiki-logo.png" alt="Википедия">
+					</a>
+				</div>
+			</div>
+			<!-- // Логотип -->
+
+			<!-- Кнопка -->
+			<div class="aside-block">
+				<a href="new.html" class="button-new">Добавить статью</a>
+			</div>
+			<!-- // Кнопка -->
+
+			<!-- Новые статьи  -->
+			<div class="aside-block">
+				<h3 class="aside-title">
+					Новые статьи
+				</h3>
+				<ul class="articles-list" id="last-articles"></ul>
+			</div>
+			<!-- // Новые статьи  -->
+
+		</div>
+		<!-- // Левая колонка -->
+
+		<!-- Центральная колонка -->
+		<div class="main-col">
+
+			<!-- Блок 1 -->
+			<div class="section-block">
+				<div class="title">Добро пожаловать в Википедию,</div>
+				<p>это учебный проект.</p>
+			</div>
+			<!-- // Блок 1 -->
+
+			<!-- Новая статья   - промо -->
+			<div class="section-block">
+				<div class="title-new-article">Новая статья</div>
+				<article class="article-wrapper" id="markdown-result"></article>
+				<button class="button" id="read-article">Читать полностью</button>
+			</div>
+			<!-- // Новая статья   - промо -->
+
+			<!-- Все остальные статьи  -->
+			<div class="section-block">
+				<div class="title-new-article">Все статьи</div>
+				<ul class="all-list" id="all-articles"></ul>
+			</div>
+			<!-- // Все остальные статьи  -->
+
+		</div>
+		<!-- // Центральная колонка -->
+	</div>
+
+	<!-- Копирайты -->
+	<footer class="page-footer">
+		<p>Проект сделал Сергей Григорович на интенсиве <a href="https://WebCademy.ru" target="_blank">WebCademy.ru</a></p>
+	</footer>
+	<!-- Копирайты -->
+
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/index.js"></script>
+
+</body>
+
+</html>
